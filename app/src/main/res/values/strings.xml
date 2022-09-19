@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TravelNotes</string>
+    <string name="menu">Menu</string>
+    <string name="location">Location: $d</string>
+    <string name="what_are_you_doing">What are you doing?</string>
+    <string name="title_note">Title note</string>
+    <string name="title_dialog">Delete note</string>
+    <string name="message_dialog">Are you sure you want to delete the note?</string>
+    <string name="negative_button_dialog">Cancel</string>
+    <string name="positive_button_dialog">OK</string>
+    <string name="error_insert_note">Enter title and description</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:backgroundTint="@color/white">
+
+    <TextView
+        android:id="@+id/tvTitleNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:chainUseRtl="true"
+        app:layout_constraintEnd_toStartOf="@id/iBtnDeleteNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/tvTextNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:chainUseRtl="true"
+        app:layout_constraintEnd_toStartOf="@id/iBtnDeleteNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleNote"
+        tools:text="@tools:sample/lorem/random" />
+
+    <ImageButton
+        android:id="@+id/iBtnDeleteNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/tvTextNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTextNote"
+        app:layout_constraintTop_toTopOf="@id/tvTitleNote"
+        android:layout_marginTop="4dp"/>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
